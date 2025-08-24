@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+.si-he {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.si-he .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav a {
+  color: #f0c330;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #fff176;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.notita {
+  background: #fff8e1;
+  padding: 15px;
+  border-left: 5px solid #f0c330;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.footer ul li {
+  margin: 8px 0;
+}
+
+.footer ul li a {
+  color: #f0c330;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #fff176;
+}
+
+.copy {
+  font-size: 0.9rem;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+#start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh; /* ocupa 70% de la altura de la pantalla */
+  background: linear-gradient(to right, #f0c33022, #fff17644);
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+#start h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+#start p {
+  max-width: 800px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
